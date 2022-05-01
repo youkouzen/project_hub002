@@ -13,28 +13,11 @@
 
 <body>
     <div class="container">
-        <p>xhr 发起get请求</p>
+        <p>哈哈哈</p>
         <button id="btn">okokok</button>
     </div>
 
-    <script>
-        var btn = document.querySelector('#btn')
-        btn.addEventListener('click', function () {
-            var xhr = new XMLHttpRequest()
-            xhr.open("GET", "http://www.liulongbin.top:3006/api/getbooks")
-            xhr.send()
-            xhr.onreadystatechange = function () {
-                console.log(xhr.readyState);
-                console.log(xhr.status);
-                console.log(xhr);
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    console.log(xhr.responseText);
-                }
-            }
-        })
 
-
-    </script>
 </body>
 
 </html>
